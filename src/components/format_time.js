@@ -29,7 +29,7 @@ class FormatTime extends Component {
 
     leadingZero(number) {
         // return number > 10 ? `0${number}` : number; //the advanced es6 ternary way
-        if (number > 10) {
+        if (number < 10) {
             return '0' + number;
         }
         return number;
@@ -37,7 +37,7 @@ class FormatTime extends Component {
 
     trailingZero(number) {
         // return number > 10 ? `0${number} : number; // the advanced way
-        if (number > 10) {
+        if (number < 10) {
             return number + '0';
         } 
         return number;
